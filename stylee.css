@@ -1,0 +1,268 @@
+/* General Styling */
+body {
+  font-family: "Courier New", monospace;
+  margin: 0;
+  padding: 0;
+  background: #000; /* Black background for terminal effect */
+  color: #00ff00; /* Bright green text for terminal effect */
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  position: relative; /* To position the side borders */
+  font-size: 1rem; /* Base font size */
+}
+
+/* Side Borders */
+body::before,
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1%; /* Width of the side borders */
+  background: linear-gradient(
+    180deg,
+    #00ff00,
+    #002b36
+  ); /* Gradient effect for the borders */
+  z-index: 1;
+}
+
+body::before {
+  left: 0;
+}
+
+body::after {
+  right: 0;
+}
+
+/* Main Content */
+.main-content {
+  margin-left: 15%; /* Margin to push content away from the left border */
+  margin-right: 15%; /* Margin to push content away from the right border */
+  z-index: 2; /* Ensure content is above the borders */
+}
+
+/* Header */
+header {
+  background: #002b36; /* Dark background for header */
+  color: #00ff00; /* Bright green text */
+  padding: 2vw 0; /* Responsive padding */
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 255, 0, 0.3); /* Green shadow */
+  font-size: 2vw; /* Font size as a percentage of viewport width */
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 1vw; /* Margin in viewport width units */
+}
+
+nav ul li a {
+  color: #00ff00; /* Bright green text */
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5vw 1vw; /* Padding in viewport width units */
+  border-radius: 0.5vw; /* Border radius in viewport width units */
+  transition: background 0.3s ease, color 0.3s ease;
+  font-size: 1.2vw; /* Font size in viewport width units */
+}
+
+nav ul li a:hover {
+  background: #005b96; /* Dark blue for hover effect */
+  color: #00ff00; /* Keep text green */
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 1vw;
+  right: 1vw;
+  background: #dc322f; /* Bright red for close button */
+  color: #fff;
+  border: none;
+  padding: 0.8vw 1.2vw;
+  font-size: 1.5vw; /* Font size in viewport width units */
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.close-btn:hover {
+  background: #cb4b16; /* Darker red for hover effect */
+  color: #fff;
+}
+
+/* Intro Section */
+.intro {
+  position: relative;
+  text-align: center;
+  padding: 5vw 2vw; /* Responsive padding */
+  background: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+  border-radius: 1vw; /* Border radius in viewport width units */
+  box-shadow: 0 6px 12px rgba(0, 255, 0, 0.3); /* Green shadow */
+  z-index: 2; /* Ensure content is above the borders */
+}
+
+.intro img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 1vw; /* Border radius in viewport width units */
+  box-shadow: 0 4px 8px rgba(0, 255, 0, 0.3); /* Green shadow */
+}
+
+.intro h1 {
+  margin: 2vw 0;
+  font-size: 4vw; /* Font size as a percentage of viewport width */
+  text-shadow: 2px 2px 4px rgba(0, 255, 0, 0.3); /* Green shadow */
+}
+
+.intro p {
+  font-size: 2vw; /* Font size as a percentage of viewport width */
+  margin: 2vw auto; /* Center the paragraph and add top/bottom margin */
+  max-width: 70vw; /* Limit the width to 70% of the viewport width */
+  line-height: 1.5; /* Adjust line height for readability */
+  text-align: center; /* Center the text */
+}
+
+/* Section Styles */
+section {
+  padding: 5vw 2vw; /* Responsive padding */
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7); /* Darker black background for sections */
+  border-radius: 1vw; /* Border radius in viewport width units */
+  margin: 2vw 0; /* Responsive margin */
+}
+
+section h2 {
+  margin-bottom: 2vw;
+  font-size: 3vw; /* Font size as a percentage of viewport width */
+  color: #00ff00; /* Bright green for section headings */
+  text-shadow: 1px 1px 3px rgba(0, 255, 0, 0.2); /* Green shadow */
+}
+
+/* Features */
+.feature {
+  margin-bottom: 4vw; /* Responsive margin */
+  border: 2px solid #00ff00; /* Bright green border */
+  border-radius: 1vw; /* Border radius in viewport width units */
+  padding: 2vw;
+  background: rgba(0, 0, 0, 0.6); /* Darker black background */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 255, 0, 0.3); /* Green shadow */
+}
+
+.feature img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 1vw; /* Border radius in viewport width units */
+  box-shadow: 0 4px 8px rgba(0, 255, 0, 0.3); /* Green shadow */
+}
+
+.feature h3 {
+  margin-top: 2vw;
+  font-size: 2.5vw; /* Font size as a percentage of viewport width */
+  color: #00ff00; /* Bright green for feature headings */
+}
+
+.feature p {
+  font-size: 1.5vw; /* Font size as a percentage of viewport width */
+}
+
+/* About Section */
+#about ul {
+  list-style: none;
+  padding: 0;
+}
+
+#about ul li {
+  margin: 1vw 0; /* Responsive margin */
+}
+
+#about ul li a {
+  color: #00ff00; /* Bright green for links */
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#about ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Video Section */
+video {
+  max-width: 100%; /* Ensure the video doesn't exceed the container width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 1vw; /* Border radius in viewport width units */
+  box-shadow: 0 4px 8px rgba(0, 255, 0, 0.3); /* Green shadow */
+  margin: 0 auto; /* Center the video */
+  display: block; /* Ensure video is a block element */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 1vw 0; /* Responsive margin */
+  }
+
+  .intro {
+    padding: 4vw 2vw; /* Adjusted padding for smaller screens */
+  }
+
+  .intro h1 {
+    font-size: 5vw; /* Adjusted font size for heading */
+  }
+
+  .intro p {
+    font-size: 2vw; /* Adjusted font size */
+    max-width: 90vw; /* Adjusted width for smaller screens */
+  }
+
+  .feature {
+    padding: 1.5vw;
+  }
+
+  .feature img {
+    max-width: 100%;
+  }
+
+  header {
+    font-size: 2vw; /* Adjusted font size for header */
+  }
+
+  section h2 {
+    font-size: 3vw; /* Adjusted font size for section headings */
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.feature {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.intro {
+  animation: fadeIn 1.5s ease-in-out;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank System Project</title>
+    <link rel="stylesheet" href="stylee.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#intro">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#video">Video</a></li>
+        </ul>
+      </nav>
+      <div id="intro" class="intro">
+        <img src="LoginScreen.png" alt="Cover Image" />
+        <h1>Bank System</h1>
+        <p>
+          Welcome to Bank System! Your journey to easy and secure banking starts
+          here. Explore our features and see how we can simplify your financial
+          management.
+        </p>
+      </div>
+    </header>
+
+    <section id="features">
+      <h2>Features</h2>
+      <div class="feature">
+        <img src="MainScreen.png" alt="Feature 1 Image" />
+        <h3>Main Menue Screen</h3>
+        <p>
+          The main function in the Bank System interface allows users to select
+          an action by entering a number from 1 to 10. Each number corresponds
+          to a specific function such as viewing the client list, adding or
+          deleting a client, updating client information, performing
+          transactions, managing users, logging in or out, and currency
+          exchange.
+        </p>
+      </div>
+      <div class="feature">
+        <img src="TransactionScreen.png" alt="Feature 2 Image" />
+        <h3>Transactions Screen</h3>
+        <p>
+          The Transactions Menu allows users to manage financial activities.
+          Options include depositing money, withdrawing funds, viewing total
+          account balances, transferring money between accounts, and reviewing
+          the transfer log. Selecting an option by entering a number from 1 to 6
+          performs the corresponding action or returns to the main menu.
+        </p>
+      </div>
+      <div class="feature">
+        <img src="ManageUsersScreen.png" alt="Feature 3 Image" />
+        <h3>Manage Users Screen</h3>
+        <p>
+          The Manage Users Menu allows you to handle user accounts within the
+          Bank System. You can list all users, add new ones, delete existing
+          users, update user information, or search for a specific user.
+          Selecting an option by entering a number from 1 to 6 performs the
+          chosen action or returns to the main menu..
+        </p>
+      </div>
+      <div class="feature">
+        <img src="LoginRegisterListScreen.png" alt="Feature 3 Image" />
+        <h3>Login Register List Screen</h3>
+        <p>
+          The Login Register List Screen shows records of user login attempts,
+          including timestamps, usernames, passwords, and permissions. It
+          displays data for each login event, allowing monitoring of user
+          activities. This log helps in tracking successful and unsuccessful
+          login attempts, highlighting any security concerns or issues with user
+          access.
+        </p>
+      </div>
+      <div class="feature">
+        <img src="CurrancyExhangeMainScreen.png" alt="Feature 3 Image" />
+        <h3>Currancy Exhange Main Screen</h3>
+        <p>
+          The Currency Exchange Menu allows users to manage currency-related
+          tasks. Options include listing available currencies, searching for a
+          specific currency, updating exchange rates, and using a currency
+          calculator for conversions. Selecting an option by entering a number
+          from 1 to 5 performs the chosen action or returns to the main menu.
+        </p>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>Bank System: About the Project</h2>
+      <p>
+        The Bank System project was developed to offer a secure and
+        user-friendly mobile banking solution. Its primary goal is to enable
+        users to efficiently manage their bank accounts through functionalities
+        such as deposits, withdrawals, transfers, and transaction history
+        reviews. Designed as a portfolio project for Holberton School, it
+        showcases expertise in mobile app development and financial management.
+      </p>
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/ibrahim-orabi-5522081a2/"
+            >Ibrahim Mohamed - LinkedIn</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/ibrahimmar2">Ibrahim Mohamed - GitHub</a>
+        </li>
+        <li>
+          <a href="https://x.com/IbrahimmarErabi">Ibrahim Mohamed - Twitter</a>
+        </li>
+      </ul>
+      <p>
+        GitHub Repository:
+        <a href="https://github.com/ibrahimmar2/Bank_System_portfolio_project"
+          >Project Repository</a
+        >
+      </p>
+    </section>
+
+    <section id="video">
+      <h2>Project Video</h2>
+      <video controls>
+        <source src="ProjcetBank.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </section>
+    <script>
+      function closeIntro() {
+        document.getElementById("intro").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
